@@ -1,0 +1,52 @@
+root {
+    --primary-color: #CBC9AD;
+    --secondColor: #656839;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/8e60c54d673b47f4a8e861b650cea60f.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+ 
+main {
+    section {
+        background-color: #CBC9AD;
+        opacity: 0.9;
+        width: 50%;
+        height: 6rem;
+        margin: 8% auto 0 auto;
+        padding: 2rem;
+        border-radius: 20px;
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 6em;
+        button {
+            color: white;
+            background-color: #656839;
+            cursor: pointer;
+            height: 7rem;
+            width: 30%;
+            font-size: 1.3em;
+            border-radius: 20px;
+            padding: 1rem;
+            transition: transform 0.2s;
+           
+        }
+        :hover{
+            transform: scale(1.2);
+            
+        }
+    }
+}
