@@ -1,5 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+:root {
+    --textBoxColor: rgb(203, 208, 185, 0.6);
+    --buttonBoxColor: #CBC9AD;
+    --fontP: "Inter", sans-serif;
+    --radiusText: 20px;
+    --radiusButton: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Mate SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: clamp(0.4rem, -0.15rem + 2vw, 1.875rem);
+}
+
 body {
     background-image: url("Assets/field-of-broccoli-with-a-village-2d-style\ .jpeg");
     background-size: cover;
     background-size: no-repeat;
+}
+
+p {
+    background-color: #CBC9AD;
+    text-align: center;
+    padding: 60px;
+    margin: 100px 100px 100px 100px;
+    border-radius: var(--radiusButton);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 1%;
+    border-radius: var(--radiusButton);
+    margin: 20px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: xx-large;
+    justify-content: space-around;
+}
+
+img {
+    width: 600px;
 }
