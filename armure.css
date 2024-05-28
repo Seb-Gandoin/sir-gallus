@@ -1,8 +1,18 @@
-root {
-    --primary-color: #CBC9AD;
-    --secondColor: #656839;
-}
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:wght@100..900&display=swap');
 
+
+:root {
+    --textBoxColor: rgb(203, 208, 185,0.8);
+    --buttonBoxColor: #656839;
+
+    --fontTitle: "Imperial Script";
+    --fontP: "Inter",sans-serif;
+
+    --radiusText: 20px;
+    --radiusButton: 10px;
+
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,16 +26,17 @@ body {
  
 main {
     section {
-        background-color: #CBC9AD;
-        opacity: 0.9;
+        background-color: var(--textBoxColor);
         width: 50%;
         height: 6rem;
         margin: 8% auto 0 auto;
         padding: 2rem;
-        border-radius: 20px;
+        border-radius: var(--radiusText);
 
         p {
             font-size: 1.5em;
+            font-family: var(--fontP);
+            text-align: center;
         }
     }
     .btn {
@@ -34,12 +45,13 @@ main {
         margin-top: 6em;
         button {
             color: white;
-            background-color: #656839;
+            font-family: var(--fontP);
+            background-color: var(--buttonBoxColor);
             cursor: pointer;
             height: 7rem;
             width: 30%;
             font-size: 1.3em;
-            border-radius: 20px;
+            border-radius: var(--radiusButton);
             padding: 1rem;
             transition: transform 0.2s;
            
