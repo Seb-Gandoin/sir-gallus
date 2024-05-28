@@ -23,12 +23,12 @@ body {
   -o-background-size: cover;
   background-size: cover;
 
-  display: grid;
+ display: grid;
   grid-template-columns: repeat(auto-fit,3, 1fr);
   grid-template-rows: repeat(7, 1fr);
   grid-column-gap: 30px;
  
-
+ 
   .histoire {
     background-color: var(--textBoxColor);
     font-family: var(--fontP);
@@ -52,28 +52,21 @@ body {
     height: 100%;
     grid-area: 2 / 3 / 8 / 4; 
     cursor: url("assets/sword4.png"), pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
   }
 
   .renardor:active {
-    animation:beatRenardor 0.2s ease-in;
+    animation:beatRenardor 0.1s ease-in;
     transform: scale(0.95);
       
   }
 
-  @keyframes beatRenardor {
-    0% {
-        transform: scale(1);
-        opacity:1;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity:0.5;
-    }
-    100% {
-        transform: scale(1);
-        opacity:1;
-    }
+.flammes {
+  height: 45%;
+  position: fixed;
+  bottom: -100px;
+  align-items: center;
+}
 
 
 }
