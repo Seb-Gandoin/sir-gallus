@@ -1,11 +1,3 @@
-// Son quand on tape
-// function swordSound () {
-//     let swordSound = new Audio();
-//     swordSound.src = "assets/swordsound.mp3";
-//     swordSound.play();
-// }
-
-
 // Redirection pop-up
 let clickCount = 0;
 const requiredClicks = 15;
@@ -31,7 +23,7 @@ renardor.addEventListener('click', function() {
 // // 
 
 
-// Confettis
+// Clic souris sur Renardor - Confettis + son 
 let defaults = {
     spread: 360,
     ticks: 50,
@@ -78,3 +70,9 @@ function handleClick(event) {
 
 document.querySelector('.renardor').addEventListener('click', handleClick);
 
+// Son quand on tape seul
+// function swordSound () {
+//     let swordSound = new Audio();
+//     swordSound.src = "assets/swordsound.mp3";
+//     swordSound.play();
+// }
