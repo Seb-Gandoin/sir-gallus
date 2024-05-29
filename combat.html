@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sir Gallus</title>
-    <link rel="shortcut icon" href="/assets/poulet (favicon).png (favicon).png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/poulet (favicon).png" type="image/x-icon">
     <link rel="stylesheet" href="combat.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-
-
+    <audio id="background-audio" preload="auto" autoplay loop>
+        <source src="assets/open_2.mp3" type="audio/mpeg"> </audio>
+<div class="combat">
     <div class="histoire">
             <p>Enfin, Sir Gallus atteignit une forteresse et entra dans la salle du trône de Renardor. Renardor, furieux de l'intrusion, attaqua Sir Gallus avec une rage décuplée.
             </p>
             <span> Cliquez sur lui pour l'attaquer !</span>
     </div>
-
-    <img class="renardor" src="assets/renardor.png" alt="le guerrier renard Renardor" onclick="swordSound()">
+    <img class="renardor" src="assets/renardor.png" alt="le guerrier renard Renardor">
+    </div>
 
     <img class="flammes" src="assets/Image1.png" alt="flammes">
+   
+    <!-- <button onclick="openPopup()">Appuyez</button> -->
+    <div id="popup-overlay">
+        <div class="popup-content" >
+            <p>Le combat fut épique, chaque coup résonnant comme un tonnerre ! <br> Mais Sir Gallus, utilisant sa vitesse et son intelligence, finit par prendre le dessus. 
+                <br>Il utilisa le talisman magique pour affaiblir Renardor et, dans un dernier effort, vainquit le renard.</p>
+                <a class="popup-button" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-fast-forward-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.79 5.093 8 7.386V5.5a.5.5 0 0 1 .79-.407l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 8 10.5V8.614l-3.21 2.293A.5.5 0 0 1 4 10.5v-5a.5.5 0 0 1 .79-.407"/>
+                  </svg></a>
+        </div>
+        
+    </div>
+
 
     <script src="combat.js"></script>
 </body>
 </html>
+
