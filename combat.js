@@ -3,6 +3,8 @@ let clickCount = 0;
 const requiredClicks = 15;
 const renardor = document.querySelector('.renardor');
 let popup = document.querySelector('#popup-overlay');
+let popupSound = new Audio();
+    popupSound.src = "assets/Popup.mp3";
 
 renardor.addEventListener('click', function() {
     clickCount++;
@@ -10,6 +12,7 @@ renardor.addEventListener('click', function() {
 
     if (clickCount >= requiredClicks) {
         popup.classList.add("open");
+        popupSound.play();
     }
 });
 
