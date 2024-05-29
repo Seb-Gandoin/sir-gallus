@@ -1,7 +1,15 @@
-// Redirection pop-up
+// Musique de fond
+function playMusic() {
+    let playMusic = new Audio();
+    playMusic.src = "assets/open_2.mp3";
+    playMusic.play();
+
+// Redirection pop-up au bout de X clicks
 let clickCount = 0;
 const requiredClicks = 15;
+const bulleClicks = 5;
 const renardor = document.querySelector('.renardor');
+const bulleArgh = document.querySelector("#bulleArgh");
 let popup = document.querySelector('#popup-overlay');
 let popupSound = new Audio();
     popupSound.src = "assets/Popup.mp3";
@@ -10,7 +18,11 @@ renardor.addEventListener('click', function() {
     clickCount++;
     console.log(`Image cliquée ${clickCount} fois`);
 
-    if (clickCount >= requiredClicks) {
+    if (clickCount === bulleClicks) {
+        bulleArgh.classList.add("open");
+    }
+   
+    else if (clickCount >= requiredClicks) {
         popup.classList.add("open");
         popupSound.play();
     }
@@ -19,9 +31,12 @@ renardor.addEventListener('click', function() {
 // Si popup classique :
 
 // let popup = document.querySelector('#popup-overlay');
+// let popupSound = new Audio();
+//     popupSound.src = "assets/Popup.mp3";
 // function openPopup(){
 //     let popup= document.querySelector("#popup-overlay");
 //     popup.classList.add("open");
+//     popupSound.play();
 // }
 // // 
 

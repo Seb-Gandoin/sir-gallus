@@ -71,6 +71,23 @@ body {
   left: 0; 
 }
 
+/* Bulle */
+#bulleArgh{
+  display : none;
+}
+
+#bulleArgh.open{
+  width: 35vh;
+  position : fixed;
+  top: 6%;
+  left: 80%;
+  display: block !important;
+}
+
+.sonButton {
+  cursor: pointer;
+}
+
 /* Pop-up */
 #popup-overlay{
   position:fixed;
