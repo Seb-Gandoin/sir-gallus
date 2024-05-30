@@ -7,7 +7,7 @@
     --radiusButton: 10px;
 }
 
-h1 {
+.Title {
     text-align: center;
     font-family: "Mate SC", serif;
     font-weight: 500;
@@ -22,7 +22,7 @@ body {
     background-size: no-repeat;
 }
 
-p {
+.Text {
     background-color: #CBC9AD;
     height: 350px;
     width: 735px;
@@ -43,14 +43,14 @@ p {
     font-size: xx-large;
 }
 
-div {
+.Btns {
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
     justify-content: space-evenly;
 }
 
-section {
+.imgANDtext {
     display: flex;
     flex-direction: row-reverse;
     font-size: xx-large;
@@ -60,6 +60,6 @@ section {
     align-items: center;
 }
 
-img {
+.picture {
     width: 450px;
 }
