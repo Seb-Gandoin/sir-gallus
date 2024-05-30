@@ -77,10 +77,10 @@ body {
 }
 
 #bulleArgh.open{
-  width: 35vh;
+  width: 25vh;
   position : fixed;
   top: 6%;
-  left: 80%;
+  left: 75%;
   display: block;
 }
 
