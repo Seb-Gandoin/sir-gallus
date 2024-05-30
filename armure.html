@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix de l'armure</title>
+    <link rel="stylesheet" href="armure.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <p>
+                Sir Gallus se prépara pour sa quête. Dans son armurerie, 
+                il devait choisir l'armure qui le protégerait le mieux. 
+            </p>
+        </section>
+        <div class="btn">
+            <button onclick="openPopup()">
+                L'armure légère en plumes d'acier. 
+                Elle offrait une grande agilité mais moins de protection.
+            </button>
+            <button onclick="openPopup()">
+                L'armure lourde en écailles de dragon. 
+                Très résistante mais plus lourde. 
+            </button>
+        </div>
+        <div id="popup-overlay">
+            <div class="popup-content" >
+                <p>Bravo, tu as choisi ton armure.<br>
+                    Te voilà bien protégé. <br>
+                    Tu peux maintenant passer à la suite de ton aventure.
+                </p>
+                    <a class="popup-button" href="enigme.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-fast-forward-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.79 5.093 8 7.386V5.5a.5.5 0 0 1 .79-.407l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 8 10.5V8.614l-3.21 2.293A.5.5 0 0 1 4 10.5v-5a.5.5 0 0 1 .79-.407"/>
+                      </svg></a>
+            </div>
+        </div>
+        <script src="armure.js"></script>
+    </main>
+</body>
+</html>
