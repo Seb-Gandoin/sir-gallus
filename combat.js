@@ -17,7 +17,6 @@
 // Audio
 let audio = document.getElementById("bg-music");
 let playPauseButton = document.getElementById("play-pause-button");
-let answerInput = document.getElementById("answer-input");
 let closeBtn = document.getElementsByClassName("close")[0];
 
 

@@ -81,7 +81,7 @@ body {
   position : fixed;
   top: 6%;
   left: 80%;
-  display: block !important;
+  display: block;
 }
 
 .sonButton {
