@@ -1,4 +1,4 @@
-// // Musique de fond
+// // Musique de fond avec boutton
 let playButton = document.querySelector(".sonButton");
 let playSong = false;
 let audio = new Audio("assets/open_2.mp3");
