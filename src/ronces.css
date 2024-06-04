@@ -1,0 +1,208 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --textBoxColor: rgb(203, 208, 185,0.6);
+    --buttonBoxColor: #656839;
+    --fontP: "Inter", sans-serif;
+    --radiusText : 20px;
+    --radiusButton : 10px;
+  }
+  
+  html, body { height : 100vh; }
+
+body {
+    background: url("../assets/ForetSombre.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    
+    #back { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        
+
+            .text-box {
+                background-color: var(--textBoxColor);
+                margin-right: 55%;
+                margin-left: 5%;
+                padding: 25px;
+                border-radius: var(--radiusText);
+                margin-bottom: 48vh;
+                max-width: 38vh;
+                
+                p {
+                    padding: 10px 0;
+                    font-family: var(--fontP);
+                    font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+                    text-align: center;
+                }
+            }
+
+            .continue {
+                display: flex;
+                justify-content: center;
+                margin-left: 17vh;
+                cursor: pointer;
+                filter: drop-shadow(-2px -1px 5px gold);
+            }
+        }
+
+        .ronces {
+            position:fixed;
+            cursor: url("../assets/sword4.png"), pointer;
+            transition: opacity 1s ease-out;
+        }
+        .ronces:active {
+            animation: 0.1s ease-in;
+            transform: scale(0.85);
+            opacity: 0;
+          }
+       
+        #ronce1 {
+            bottom :-5vh;
+            left : 60vh;
+            width: 30vh;
+        }
+        #ronce2 {
+            bottom :-5vh;
+            left : 63vh;
+            width: 35vh;
+        }
+        #ronce3 {
+            bottom :-5vh;
+            left : 64vh;
+            width: 50vh;
+        }
+        #ronce4 {
+            bottom :-5vh;
+            left : 116vh;
+            width: 55vh;
+        }
+        #ronce5 {
+            bottom :-5vh;
+            left : 91vh;
+            width: 60vh;
+        }
+        #ronce6 {
+            bottom :-5vh;
+            left : 37vh;
+            width: 55vh;
+        }
+        #ronce7 {
+            bottom :-5vh;
+            left : 80vh;
+            width: 30vh;
+            z-index: 10;
+        }
+        #ronce7.hidden{
+            display: none;
+            opacity: 0;
+            
+        }
+        #ronce8 {
+            bottom :-5vh;
+            left : 22vh;
+            width: 40vh;
+        }
+        #ronce9 {
+            bottom :-5vh;
+            left : 12vh;
+            width: 50vh;
+        }
+        #ronce10 {
+            bottom :-5vh;
+            left : 33vh;
+            width: 55vh;
+        }
+        #ronce11 {
+            bottom :-5vh;
+            left : 113vh;
+            width: 60vh;         
+        }
+        #ronce12 {
+            bottom :-5vh;
+            left : 70vh;
+            width: 46vh;
+        }
+
+        
+}
+
+
+/* Pop-up */
+      #popup-overlay{
+        position:fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 98;
+        display : none;
+      }
+      
+      #popup-overlay.open{
+        display: block !important;
+      }
+      
+      .popup-content {
+        width: 500px;
+        height: 363px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        background: url("../assets/FondPopUp.png") ;
+        border-radius: var(--radiusText);
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        font-family: var(--fontP);
+        text-align: center;
+        line-height:2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+        p{
+          margin:85px 0;
+        }
+      }
+      
+      .popup-button {
+        color: var(--buttonBoxColor);
+        posisiton : absolute;
+      }
+      
+/* Boutton Musique */
+
+      #play-pause-button {
+        float: right;
+        margin-top: 2%;
+        margin-right: 5%;
+        padding: 10px 20px;
+        height: 40px;
+        width: 80px;
+        background-color: var(--buttonBoxColor);
+        color: black;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        z-index: 50;
+      
+      }
+      
+      #play-pause-button:hover {
+        background-color: var(--textBoxColor);
+      }
