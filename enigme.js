@@ -14,6 +14,10 @@ playPauseButton.addEventListener("click", function () {
     }
 });
 
+function redirectToPage() {
+    window.location.href = "03bis.html";
+}
+
 let popup = document.querySelector('#popup-overlay');
 let popupSound = new Audio();
 popupSound.src = "assets/Popup.mp3";

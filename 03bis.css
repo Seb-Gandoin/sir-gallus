@@ -113,30 +113,24 @@ body {
         position: relative;
         top: 70px;
         height: 40px;
-        width: 90px;
-        background-color: var(--buttonBoxColor);
+        width: 120px;
+        background-color: var(--textBoxColor);
         color: var(--fontColor);
         border: none;
         font-size: 1rem;
         cursor: pointer;
         border-radius: var(--radiusButton);
         z-index: 10;
+        transition: transform 0.5s, background-color 0.5s;
     }
 
     button:hover {
-        background-color: var(--textBoxColor);
+        background-color: var(--buttonBoxColor);
     }
 
-    /* no function
-    .card {
-        object-fit: contain;
+    button.zoomed {
+        transform: scale(1.5);
+        background-color: var(--buttonBoxColor);
     }
-
-    .card:hover {
-        width: 600px;
-        height: auto;
-        cursor: pointer;
-
-    }*/
 
 }
