@@ -23,6 +23,28 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+header {
+    display: flex;
+    justify-content: flex-end;
+
+
+#play-pause-button {
+    height: 40px;
+    width: 80px;
+    background-color: var(--buttonBoxColor);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+
+  }
+
+  #play-pause-button:hover {
+    background-color: var(--textBoxColor);
+  }
+}
  
 main {
     section {
