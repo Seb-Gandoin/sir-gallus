@@ -19,7 +19,7 @@ let audio = document.getElementById("bg-music");
 let playPauseButton = document.getElementById("play-pause-button");
 let closeBtn = document.getElementsByClassName("close")[0];
 
-
+audio.volume = 0.4;
 playPauseButton.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
@@ -71,7 +71,7 @@ renardor.addEventListener('click', function() {
 let defaults = {
     spread: 360,
     ticks: 50,
-    gravity: 0,
+    gravity: 5,
     decay: 0.64,
     startVelocity: 30,
     colors: ['7c121d', 'a21725', '47080f', 'b30203', 'e60305']
@@ -80,7 +80,7 @@ let defaults = {
 function shoot(x, y) {
     confetti({
         ...defaults,
-        particleCount: 10,
+        particleCount: 5,
         scalar: 1,
         shapes: ['star'],
         origin: { x: x / window.innerWidth, y: y / window.innerHeight }
@@ -113,6 +113,29 @@ function handleClick(event) {
 }
 
 document.querySelector('.renardor').addEventListener('click', handleClick);
+
+
+// déplacement renardor + animation click
+document.addEventListener('mousemove', (e) => {
+    const image = document.querySelector('.renardor');
+    const { clientX: mouseX, clientY: mouseY } = e;
+    const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
+    
+    const xOffset = -(mouseX / windowWidth - 0.5) * 80; 
+    const yOffset = -(mouseY / windowHeight - 0.5) * 80;
+
+    image.style.transform = `translateX(${xOffset}px) translateY(${yOffset}px)`;
+});
+document.querySelector('.renardor').addEventListener('mousedown', () => {
+    const image = document.querySelector('.renardor');
+    image.style.transform += ' scale(0.93)';
+});
+
+document.querySelector('.renardor').addEventListener('mouseup', () => {
+    const image = document.querySelector('.renardor');
+    image.style.transform = image.style.transform.replace(' scale(0.93)', '');
+});
+
 
 // Son quand on tape seul
 // function swordSound () {

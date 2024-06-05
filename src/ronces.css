@@ -55,7 +55,7 @@ body {
                 filter: drop-shadow(-2px -1px 5px gold);
             }
         }
-
+/* Ronces */
         .ronces {
             position:fixed;
             cursor: url("../assets/sword4.png"), pointer;
@@ -185,7 +185,7 @@ body {
         posisiton : absolute;
       }
       
-/* Boutton Musique */
+/* Boutton Musique+Back */
 a {
     color: black;
 }

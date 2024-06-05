@@ -40,10 +40,8 @@ body {
     font-size: clamp(0.4rem, -0.15rem + 2vw, 1.875rem);
     font-weight: 500;
     border-radius: var(--radiusText);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-height: 258px;
+    background-color: var(--textBoxColor);
+    margin-right: 55%;
 
     span {
       font-size: smaller;
@@ -52,15 +50,18 @@ body {
 
   .renardor {
     max-height: 85vh;
-    grid-area: 2 / 3 / 8 / 4; 
-    cursor: url("../assets/sword4.png"), pointer;
-    transition: transform 0.1s ease;
+    /* grid-area: 2 / 3 / 8 / 4;  */
+        position:fixed;
+        bottom: -3vh;
+        left: 115vh;
+      cursor: url("../assets/sword4.png"), pointer;
+      transition: transform 0.1s ease;
   }
-/* Animation au clic */
-  .renardor:active {
+/* Animation au clic seule */
+  /* .renardor:active {
     animation:beatRenardor 0.1s ease-in;
     transform: scale(0.95);
-  }
+  } */
 
 /* Flamme 1er plan */
 .flammes {
@@ -79,8 +80,8 @@ body {
 #bulleArgh.open{
   width: 25vh;
   position : fixed;
-  top: 6%;
-  left: 75%;
+  top: 5vh;
+  left: 145vh;
   display: block;
 }
 
@@ -135,27 +136,37 @@ body {
   posisiton : absolute;
 }
 
-#play-pause-button {
-  float: right;
-  margin-top: 2%;
-  margin-right: 5%;
-  padding: 10px 20px;
+/* Bouttons musique et back */
+a {
+  color: black;
+}
+#play-pause-button,
+#back-button {
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 40px;
   width: 80px;
+  font-size: 1rem;
   background-color: var(--buttonBoxColor);
-  color: black;
+  color: var(--fontColor);
   border: none;
-  border-radius: 10px;
+  border-radius: 0 0 20px 20px;
   cursor: pointer;
-  z-index: 50;
+  
+}
 
+#back-button {
+  right: 82px;
+}
+
+#back-button:hover {
+  background-color: var(--textBoxColor);
 }
 
 #play-pause-button:hover {
   background-color: var(--textBoxColor);
 }
 
-
-}
 
 /* Fin body */
