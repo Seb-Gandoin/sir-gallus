@@ -41,12 +41,11 @@ const ronce4 = document.getElementById('ronce4');
 const ronce5 = document.getElementById('ronce5');
 const ronce6 = document.getElementById('ronce6');
 const ronce7 = document.getElementById('ronce7');
-const ronc8 = document.getElementById('ronce8');
+const ronce8 = document.getElementById('ronce8');
 const ronce9 = document.getElementById('ronce9');
 const ronce10 = document.getElementById('ronce10');
 const ronce11 = document.getElementById('ronce11');
 const ronce12 = document.getElementById('ronce12');
-
     
     ronce1.addEventListener('click', () => {
         ronce1.style.display = 'none'; 

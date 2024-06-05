@@ -186,23 +186,33 @@ body {
       }
       
 /* Boutton Musique */
+a {
+    color: black;
+}
+#play-pause-button,
+#back-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 80px;
+    font-size: 1rem;
+    background-color: var(--buttonBoxColor);
+    color: var(--fontColor);
+    border: none;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+    
+}
 
-      #play-pause-button {
-        float: right;
-        margin-top: 2%;
-        margin-right: 5%;
-        padding: 10px 20px;
-        height: 40px;
-        width: 80px;
-        background-color: var(--buttonBoxColor);
-        color: black;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        z-index: 50;
-      
-      }
-      
-      #play-pause-button:hover {
-        background-color: var(--textBoxColor);
-      }
+#back-button {
+    right: 82px;
+}
+
+#back-button:hover {
+    background-color: var(--textBoxColor);
+}
+
+#play-pause-button:hover {
+    background-color: var(--textBoxColor);
+}
