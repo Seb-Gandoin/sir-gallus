@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:wght@100..900&display=swap');
+
+
+:root {
+    --textBoxColor: rgb(203, 208, 185,0.8);
+    --buttonBoxColor: #656839;
+
+    --fontTitle: "Imperial Script";
+    --fontP: "Inter",sans-serif;
+
+    --radiusText: 20px;
+    --radiusButton: 10px;
+
+}
+
+body {
+    background-image: url(img/a-roast-chicken-adorned-in-steel-armor-chainmail-clinging-to-its-rotisserie-cooked-form-juxtaposed.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+
+
+#play-pause-button {
+    height: 40px;
+    width: 80px;
+    background-color: var(--buttonBoxColor);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+
+  }
+
+  #play-pause-button:hover {
+    background-color: var(--textBoxColor);
+  }
+}
+
+section {
+    background: var(--textBoxColor);
+    width: 65%;
+    height: 45vh;
+    margin: 15vh auto auto auto;
+    text-align: center;
+    font-family: var(--fontP);
+    border-radius: var(--radiusText);
+
+    h1 {
+        padding-top: 5vh;
+        
+    }
+    p {
+        width: 75%;
+        margin: 10vh auto auto;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+    button {
+        color: white;
+        font-family: var(--fontP);
+        background-color: var(--buttonBoxColor);
+        cursor: pointer;
+        height: 5rem;
+        width: 25%;
+        font-size: 1.3em;
+        border-radius: var(--radiusButton);
+        padding: 1rem;
+        transition: transform 0.2s;
+       
+    }
+    :hover{
+        transform: scale(1.2);
+        
+    }
+}
