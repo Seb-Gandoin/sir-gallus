@@ -10,3 +10,7 @@ playPauseButton.addEventListener("click", function () {
         playPauseButton.textContent = "play";
     }
 });
+
+function redirectToPage() {
+    window.location.href = "armure.html";
+}
