@@ -12,6 +12,7 @@
     --buttonBoxColor: #656839;
     --fontTitle: Mate SC;
     --fontP: "Inter", sans-serif;
+    --fontColor: whitesmoke;
     --radiusText: 20px;
     --radiusButton: 10px;
 }
@@ -23,25 +24,33 @@ body {
     color: black;
 
 
-    #play-pause-button {
-        float: right;
-        margin-top: 5%;
-        margin-right: 5%;
-        padding: 10px 20px;
+    #play-pause-button,
+    #back-button {
+        position: absolute;
+        top: 0;
+        right: 0;
         height: 40px;
         width: 80px;
+        font-size: 1rem;
         background-color: var(--buttonBoxColor);
-        color: black;
+        color: var(--fontColor);
         border: none;
-        border-radius: 10px;
+        border-radius: 0 0 20px 20px;
         cursor: pointer;
-        z-index: 99;
+    }
 
+    #back-button {
+        right: 82px;
+    }
+
+    #back-button:hover {
+        background-color: var(--textBoxColor);
     }
 
     #play-pause-button:hover {
         background-color: var(--textBoxColor);
     }
+
 
     #character {
         width: 650px;
@@ -49,6 +58,7 @@ body {
         position: absolute;
         bottom: 0vh;
         right: 0vh;
+
     }
 }
 
