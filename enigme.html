@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Aventures de Sir Gallus - Enigme</title>
-    <link
-      rel="shortcut icon"
-      href="assets/poulet (favicon).png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/poulet (favicon).png" type="image/x-icon" />
     <link rel="stylesheet" href="enigme.css">
 </head>
 
@@ -17,10 +13,15 @@
     <audio id="bg-music" autoplay loop>
         <source src="assets/003-enigme.mp3" type="audio/mpeg">
     </audio>
+    <div class="character-container">
+        <img class="character" src="assets/rabbit-oracle.png" alt="rabbit-oracle">
+        <div class="shadow"></div>
+    </div>
 
-    <img id="character" src="assets/rabbit-oracle.png" alt="rabbit-oracle">
+
+    <button id="button-accueil" onclick="redirectToHome()"><img class="imgIcone" src="assets/WZ1buh01.svg"></button>
     <button id="play-pause-button">♬</button>
-    <button id="back-button">Retour</button>
+    <button id="back-button" onclick="redirectToPage()"><img class="imgBack" src="assets/back.png"></button>
     <div class="container">
         <div class="text-box">
             <p>En chemin, Sir Gallus rencontre Lapinard le lapin druide, qui bloquait son passage dans la Forêt des
