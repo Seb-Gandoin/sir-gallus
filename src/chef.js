@@ -5,6 +5,10 @@ function swordSound() {
     swordSound.play();
 }
 
+//Retour accueil
+function redirectToHome() {
+    window.location.href = "accueil.html";
+}
 
 // Audio
 let audio = document.getElementById("bg-music");
@@ -15,10 +19,10 @@ audio.volume = 0.4;
 playPauseButton.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
-        playPauseButton.textContent = "pause";
+        playPauseButton.textContent = "𝅛 𝅛";
     } else {
         audio.pause();
-        playPauseButton.textContent = "play";
+        playPauseButton.textContent = "♬";
     }
 });
 
@@ -28,8 +32,8 @@ document.addEventListener('mousemove', (e) => {
     const { clientX: mouseX, clientY: mouseY } = e;
     const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
     
-    const xOffset = -(mouseX / windowWidth - 0.5) * 800; 
-    const yOffset = -(mouseY / windowHeight - 0.5) * 90;
+    const xOffset = -(mouseX / windowWidth - 0.6) * 1000; 
+    const yOffset = -(mouseY / windowHeight - 0.6) * 90;
 
     image.style.transform = `translateX(${xOffset}px) translateY(${yOffset}px)`;
 });
@@ -43,9 +47,8 @@ function swordSound() {
 
 
 // Décompte + popup
-
 let countdownElement = document.getElementById('countdown');
-let countdown = 15; // seconds
+let countdown = 15; // secondes
 let interval;
 
 function startCountdown() {
@@ -90,7 +93,7 @@ popupSound.src = "assets/Popup.mp3";
 
 //         if (countdown <= 0) {
 //             clearInterval(interval);
-//             window.location.href = 'gameover2.html'; 
+//             window.location.href = 'gameover2.html'; //lien redirection
 //         }
 //     }, 1000);
 // });

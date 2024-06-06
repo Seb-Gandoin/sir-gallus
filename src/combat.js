@@ -30,6 +30,11 @@ playPauseButton.addEventListener("click", function () {
     }
 });
 
+//Retour accueil
+function redirectToHome() {
+    window.location.href = "accueil.html";
+}
+
 // Redirection pop-up au bout de X clicks
 let clickCount = 0;
 const requiredClicks = 30;

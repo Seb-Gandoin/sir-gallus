@@ -5,6 +5,10 @@ function swordSound() {
     swordSound.play();
 }
 
+//Retour accueil
+function redirectToHome() {
+    window.location.href = "accueil.html";
+}
 
 // Audio
 let audio = document.getElementById("bg-music");

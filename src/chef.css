@@ -79,20 +79,8 @@ body {
       color: white;
       font-size: 5em;
       text-align: center;
-      font-weight: bold;
-      font-style: italic;
-      .opacity(1.0);
-      .transition(opacity 0.4s ease);
-      /* solve for flicker problem */
-      -webkit-perspective: 1000;
-      -webkit-backface-visibility: hidden;    
-    } 
-    #countdown.puffer {
-      .opacity(0);
-      .transform(scale(1.6,1.6));
-      .transition(all 0.4s ease-out);
-    }
-    
+      font-weight: bold;        
+    }     
 
     /* Pop-up */
           #popup-overlay{
@@ -142,11 +130,10 @@ body {
           }
           
     /* Boutton Musique + Back */
-    a {
-        color: black;
-    }
-    #play-pause-button,
-    #back-button {
+    #button-accueil {
+      left: 0;
+  }
+  #button-accueil, #play-pause-button, #back-button {
         position: absolute;
         top: 0;
         right: 0;
@@ -154,11 +141,10 @@ body {
         width: 80px;
         font-size: 1rem;
         background-color: var(--buttonBoxColor);
-        color: var(--fontColor);
+        color: white;
         border: none;
         border-radius: 0 0 20px 20px;
         cursor: pointer;
-        
     }
     
     #back-button {
@@ -172,4 +158,14 @@ body {
     #play-pause-button:hover {
         background-color: var(--textBoxColor);
     }
+    .imgIcone {
+      height: 80%;
+      width: 80%;
+      filter: invert(100%);
+  }
+  .imgBack {
+    height: 60%;
+    width: 40%;
+    filter: invert(100%);
+}
     

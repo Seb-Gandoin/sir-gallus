@@ -186,33 +186,41 @@ body {
       }
       
 /* Boutton Musique+Back */
-a {
-    color: black;
+   #button-accueil {
+    left: 0;
 }
-#play-pause-button,
-#back-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 40px;
-    width: 80px;
-    font-size: 1rem;
-    background-color: var(--buttonBoxColor);
-    color: var(--fontColor);
-    border: none;
-    border-radius: 0 0 20px 20px;
-    cursor: pointer;
-    
+#button-accueil, #play-pause-button, #back-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      width: 80px;
+      font-size: 1rem;
+      background-color: var(--buttonBoxColor);
+      color: white;
+      border: none;
+      border-radius: 0 0 20px 20px;
+      cursor: pointer;
+  }
+  
+  #back-button {
+      right: 82px;
+  }
+  
+  #back-button:hover {
+      background-color: var(--textBoxColor);
+  }
+  
+  #play-pause-button:hover {
+      background-color: var(--textBoxColor);
+  }
+  .imgIcone {
+    height: 80%;
+    width: 80%;
+    filter: invert(100%);
 }
-
-#back-button {
-    right: 82px;
-}
-
-#back-button:hover {
-    background-color: var(--textBoxColor);
-}
-
-#play-pause-button:hover {
-    background-color: var(--textBoxColor);
+.imgBack {
+  height: 60%;
+  width: 40%;
+  filter: invert(100%);
 }
