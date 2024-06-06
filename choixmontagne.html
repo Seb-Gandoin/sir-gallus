@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Aventures de Sir Gallus - à toi de jouer</title>
+    <link
+      rel="shortcut icon"
+      href="assets/poulet (favicon).png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="choixmontagne.css">
+</head>
+
+<body>
+    <button id="button-accueil" onclick="redirectToHome()"><img class="imgIcone" src="img/WZ1buh01.svg"></button>
+    <audio id="bg-music" autoplay loop>
+        <source src="assets/rabbit-oracle.mp3" type="audio/mpeg">
+    </audio>
+    <button id="play-pause-button">♬</button>
+    <button id="back-button" onclick="redirectToPage()"><img class="imgBack" src="img/back.png"></button>
+    <div class="container">
+        <h1>A TOI DE JOUER !</h1>
+        <div class="card">
+            <img id="montagne" src="img/colpat.jpg" alt="Col de Patatrass">
+            <h2>Le Col de Patatrass</h2>
+            <p>Un chemin qui semble le moins dangereux mais dont l’ascension reste rude.</p>
+            <a class="zoomLink"><button onclick="openPopup()" class="zoomButton">Je le choisis</button></a>
+        </div>
+        <div class="card">
+            <img id="foret" src="img/pouletgrimpe.jpg" alt="Escalade la falaise">
+            <h2>Escalade la falaise</h2>
+            <p>Si tu veux faire au plus vite, c’est la meilleure option.</p>
+            <a href="gameover1.html" class="zoomLink" ><button class="zoomButton">Je le choisis</button></a>
+        </div>
+    </div>
+    <div id="popup-overlay">
+        <div class="popup-content">
+            <p>
+                Ça va pas ? 
+                C’est à plus de 3h de route !
+                Y aura plus de Brocolis d’ici là !
+            </p>
+            <a class="popup-button" onclick="closePopup()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    fill="currentColor" class="bi bi-fast-forward-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.79 5.093 8 7.386V5.5a.5.5 0 0 1 .79-.407l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 8 10.5V8.614l-3.21 2.293A.5.5 0 0 1 4 10.5v-5a.5.5 0 0 1 .79-.407" />
+                </svg></a>
+        </div>
+    </div>
+    <script src="choixmontagne.js"></script>
+</body>
+
+</html>
