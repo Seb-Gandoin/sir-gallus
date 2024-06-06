@@ -18,11 +18,13 @@
 }
 
 body {
-    background: url('assets/background.png') no-repeat center center fixed;
-    background-size: cover;
     font-family: var(--fontP);
-    color: black;
-
+    background: url('img/03-bisBG.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
 
     #play-pause-button,
     #back-button,
@@ -43,11 +45,9 @@ body {
     #back-button {
         right: 82px;
     }
-
-    .imgBack {
-        height: 60%;
-        width: 40%;
-        filter: invert(100%);
+    
+    #button-accueil {
+        left: 0;
     }
 
     #back-button:hover {
@@ -58,100 +58,103 @@ body {
         background-color: var(--textBoxColor);
     }
 
-    #button-accueil {
-        left: 0;
-    }
-
-    .imgIcone {
-        height: 80%;
-        width: 80%;
-        filter: invert(100%);
-    }
-
-}
-
-.character {
-    width: 600px;
-    height: auto;
-    position: relative;
-    top: 6rem;
-    left: 40%;
-    animation: float 3s ease-in-out infinite;
-}
-
-.shadow {
-    position: absolute;
-    width: 600px;
-    height: 5rem;
-    background: rgba(43, 43, 43, 0.9);
-    border-radius: 50%;
-    bottom: -10px;
-    left: 40%;
-    z-index: -1;
-    animation: shadow 3s ease-in-out infinite;
-}
-
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-40px);
+    #button-accueil:hover {
+        background-color: var(--textBoxColor);
     }
 }
 
-@keyframes shadow {
+.imgIcone {
+    height: 80%;
+    width: 80%;
+    filter: invert(100%);
+}
 
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0.8);
-    }
+.imgBack {
+    height: 60%;
+    width: 40%;
+    filter: invert(100%);  
 }
 
 .container {
-    margin-top: -30rem;
-    margin-left: 5rem;
+    text-align: center;
+
+    h1 {
+        font-family: var(--fontTitle);
+        color: var(--fontColor);
+        font-size: 3em;
+    }
+
+    .card {
+        display: inline-block;
+        position: relative;
+        width: 420px;
+        margin: 3rem;
 
 
-    .text-box {
-        background-color: var(--textBoxColor);
-        margin-right: 55%;
-        margin-left: 5%;
-        padding: 25px;
-        border-radius: var(--radiusText);
-        margin-bottom: 20px;
-        width: 50%vw;
-        max-width: 700px;
-        text-align: start;
-
-        p {
-            padding: 10px 0
+        h2 {
+            position: absolute;
+            bottom: 31px;
+            width: 100%;
+            line-height: 40px;
+            background-color: var(--textBoxColor);
+            color: var(--fontColor);
+            text-align: center;
+            font-size: 1.5rem;
         }
+
+
+        #montagne,
+        #foret {
+            width: 420px;
+            height: 365px;
+            margin-bottom: -13px;
+            border-radius: 20px 20px 0 0;
+        }
+
     }
 
-    #answer-input {
-        margin-right: 55%;
-        margin-left: 5%;
-        padding: 10px;
-        font-size: 16px;
+    .card p {
+        position: absolute;
+        margin-top: 0;
+        width: 420px;
+        height: 120px;
+        background-color: var(--textBoxColor);
         color: black;
-        border-radius: 10px;
-        border: 1px solid #888;
-        width: 50%vw;
-        max-width: 700px;
-        text-align: center;
-        background-color: var(--buttonBoxColor);
-        cursor: pointer;
-    }
-}
+        border-radius: 0 0 20px 20px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        z-index: -1;
 
+
+    }
+
+
+    button {
+        display: inline-block;
+        position: relative;
+        top: 70px;
+        height: 40px;
+        width: 120px;
+        background-color: var(--textBoxColor);
+        color: var(--fontColor);
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: var(--radiusButton);
+        z-index: 10;
+        transition: transform 0.5s, background-color 0.5s;
+    }
+
+    button:hover {
+        background-color: var(--buttonBoxColor);
+    }
+
+    button.zoomed {
+        transform: scale(1.5);
+        background-color: var(--buttonBoxColor);
+    }
+
+}
 
 #popup-overlay {
     position: fixed;
@@ -196,5 +199,10 @@ body {
 
 .popup-button {
     color: var(--buttonBoxColor);
-    posisiton: absolute;
+}
+
+.iconeOK {
+    height: 25%;
+    width: 25%;
+    position: absolute;
 }

@@ -13,19 +13,33 @@
 
     --fontTitle: Mate SC;
     --fontP: Inter;
+    --fontColor: whitesmoke;
 
     --radiusText : 20px;
     --radiusButton : 10px;
 }
 
-.backgroundImgAccueil {
-    background: url("img/field-of-broccoli-with-a-village-2d-style\ 22.jpeg") no-repeat center center fixed;
+body {
+    background: url('img/03-bisBG.png') no-repeat center center fixed;
     background-size: cover;
 }
 
-.backWhite{   
-    background-color: rgb(255,255,255,0.5);
-    height: 100vh;
+#play-pause-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 80px;
+    font-size: 1rem;
+    background-color: var(--buttonBoxColor);
+    color: var(--fontColor);
+    border: none;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+}
+
+#play-pause-button:hover {
+    background-color: var(--textBoxColor);
 }
 
 .backTextEnd {
