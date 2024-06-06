@@ -5,11 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="perso.css">
   <title>Les Aventures de Sir Gallus - Choix du perso</title>
+  <link
+      rel="shortcut icon"
+      href="/assets/poulet (favicon).png"
+      type="image/x-icon"
+    />
 </head>
     <body class="bgimgperso">
         <main class="backWhite">
         <div>
+            <button id="button-accueil" onclick="location.href ='accueil.html'"><img class="imgIcone" src="Assets/WZ1buh01.svg"></button>
             <h1 class="Title">Choisi ton personnage !</h1>
+            <audio id="bg-music" autoplay loop>
+            <source src="sounds/calm-fantasy-harp-and-strings-197736.mp3" type="audio/mpeg">
+            </audio>
+            <button id="play-pause-button">♬</button>
+            <button id="back-button" onclick="location.href ='index.html'">BACK</button>
         </div>
 
 
@@ -57,5 +68,6 @@
                 </div>               
             </div>
         </main>
+        <script src="perso.js"></script>
     </body>
 </html>
