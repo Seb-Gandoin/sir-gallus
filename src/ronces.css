@@ -36,8 +36,9 @@ body {
                 margin-left: 5%;
                 padding: 25px;
                 border-radius: var(--radiusText);
-                margin-bottom: 48vh;
+                margin-bottom: 35vh;
                 max-width: 38vh;
+                margin-top: 5vh;
                 
                 p {
                     padding: 10px 0;
@@ -50,7 +51,7 @@ body {
             .continue {
                 display: flex;
                 justify-content: center;
-                margin-left: 17vh;
+                margin-left: 5vh;
                 cursor: pointer;
                 filter: drop-shadow(-2px -1px 5px gold);
             }
