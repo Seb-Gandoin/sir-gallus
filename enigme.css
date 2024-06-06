@@ -25,7 +25,8 @@ body {
 
 
     #play-pause-button,
-    #back-button {
+    #back-button,
+    #button-accueil {
         position: absolute;
         top: 0;
         right: 0;
@@ -43,6 +44,12 @@ body {
         right: 82px;
     }
 
+    .imgBack {
+        height: 60%;
+        width: 40%;
+        filter: invert(100%);
+    }
+
     #back-button:hover {
         background-color: var(--textBoxColor);
     }
@@ -51,15 +58,15 @@ body {
         background-color: var(--textBoxColor);
     }
 
-    /*
-    #character {
-        width: 650px;
-        height: auto;
-        position: absolute;
-        bottom: 0vh;
-        right: 0vh;
+    #button-accueil {
+        left: 0;
     }
-    */
+
+    .imgIcone {
+        height: 80%;
+        width: 80%;
+        filter: invert(100%);
+    }
 
 }
 
@@ -108,26 +115,10 @@ body {
     }
 }
 
-/*
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-*/
-
 .container {
     margin-top: -30rem;
     margin-left: 5rem;
 
-    /*
-    .text-box,
-    #answer-input {
-        z-index: -1;
-    }
-    */
 
     .text-box {
         background-color: var(--textBoxColor);

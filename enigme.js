@@ -3,21 +3,22 @@ let playPauseButton = document.getElementById("play-pause-button");
 playPauseButton.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
-        playPauseButton.textContent = "pause";
+        playPauseButton.textContent = "⏸";
     } else {
         audio.pause();
-        playPauseButton.textContent = "play";
+        playPauseButton.textContent = "♬";
     }
 });
+
+function redirectToHome() {
+    window.location.href = "accueil.html";
+}
 
 function redirectToPage() {
     window.location.href = "03bis.html";
 }
 
 let answerInput = document.getElementById("answer-input");
-/*
-let closeBtn = document.getElementsByClassName("close")[0];
-*/
 let popup = document.querySelector('#popup-overlay');
 let popupSound = new Audio();
 popupSound.src = "assets/assets_Popup.mp3";
