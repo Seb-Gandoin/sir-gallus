@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:wght@100..900&display=swap');
+
+:root {
+    --textBoxColor: rgb(203, 208, 185, 0.6);
+    --buttonBoxColor: #656839;
+
+    --fontTitle: Imperial Script;
+    --fontP: Inter;
+
+    --radiusText : 20px;
+    --radiusButton : 10px;
+}
+
+.backgroundImgEnd {
+    background: url("img/brocoliend.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.backTextEnd {
+    background-color: var(--textBoxColor);
+    border-radius: var(--radiusText);
+    text-align: center;
+    margin-top: 10rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    height: 410px;
+}
+
+@media screen and (width < 1360px) {
+    div {
+        height: 500px;
+    }
+}
+
+@media screen and (width < 1088px) {
+    div {
+        height: 550px;
+    }
+}
+
+@media screen and (width < 1036px) {
+    div {
+        height: 600px;
+    }
+}
+
+@media screen and (width < 992px) {
+    div {
+        height: 800px;
+    }
+}
+
+h1 {
+    margin: 0;
+    font-family: var(--fontTitle);
+    font-size: 80pt;
+}
+
+.textEnd {
+    font-family: var(--fontP);
+    padding-right: 5rem;
+    padding-left: 5rem;
+    font-size: 20pt;
+}
+
+button {
+    background-color: var(--buttonBoxColor);
+    border-radius: var(--radiusButton);
+    color: white;
+    height: 50px;
+    margin: 2rem;
+    font-family: var(--fontP);
+    font-size: 15pt;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
