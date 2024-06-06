@@ -51,17 +51,64 @@ body {
         background-color: var(--textBoxColor);
     }
 
-
+    /*
     #character {
         width: 650px;
         height: auto;
         position: absolute;
         bottom: 0vh;
         right: 0vh;
+    }
+    */
 
+}
+
+.character {
+    width: 600px;
+    height: auto;
+    position: relative;
+    top: 6rem;
+    left: 40%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.shadow {
+    position: absolute;
+    width: 600px;
+    height: 5rem;
+    background: rgba(43, 43, 43, 0.9);
+    border-radius: 50%;
+    bottom: -10px;
+    left: 40%;
+    z-index: -1;
+    animation: shadow 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
     }
 }
 
+@keyframes shadow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}
+
+/*
 .container {
     display: flex;
     flex-direction: column;
@@ -69,41 +116,51 @@ body {
     align-items: center;
     height: 100vh;
 }
+*/
 
-.text-box,
-.answer-input {
-    z-index: 10;
-}
+.container {
+    margin-top: -30rem;
+    margin-left: 5rem;
 
-.text-box {
-    background-color: var(--textBoxColor);
-    margin-right: 55%;
-    margin-left: 5%;
-    padding: 25px;
-    border-radius: var(--radiusText);
-    margin-bottom: 20px;
-    max-width: 600px;
-    text-align: start;
+    /*
+    .text-box,
+    #answer-input {
+        z-index: -1;
+    }
+    */
 
-    p {
-        padding: 10px 0
+    .text-box {
+        background-color: var(--textBoxColor);
+        margin-right: 55%;
+        margin-left: 5%;
+        padding: 25px;
+        border-radius: var(--radiusText);
+        margin-bottom: 20px;
+        width: 50%vw;
+        max-width: 700px;
+        text-align: start;
+
+        p {
+            padding: 10px 0
+        }
     }
 
+    #answer-input {
+        margin-right: 55%;
+        margin-left: 5%;
+        padding: 10px;
+        font-size: 16px;
+        color: black;
+        border-radius: 10px;
+        border: 1px solid #888;
+        width: 50%vw;
+        max-width: 700px;
+        text-align: center;
+        background-color: var(--buttonBoxColor);
+        cursor: pointer;
+    }
 }
 
-#answer-input {
-    margin-right: 55%;
-    margin-left: 5%;
-    padding: 10px;
-    font-size: 16px;
-    color: black;
-    border-radius: 10px;
-    border: 1px solid #888;
-    width: 200px;
-    text-align: center;
-    background-color: var(--buttonBoxColor);
-    cursor: pointer;
-}
 
 #popup-overlay {
     position: fixed;
