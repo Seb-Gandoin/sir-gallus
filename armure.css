@@ -24,28 +24,49 @@ body {
     background-size: 100%;
 }
 
+
 header {
     display: flex;
     justify-content: flex-end;
-
-
-#play-pause-button {
+}
+#button-accueil {
+  left: 0;
+}
+#button-accueil, #play-pause-button, #back-button {
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 40px;
     width: 80px;
+    font-size: 1rem;
     background-color: var(--buttonBoxColor);
-    color: black;
+    color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 0 0 20px 20px;
     cursor: pointer;
-   
-
-  }
-
-  #play-pause-button:hover {
-    background-color: var(--textBoxColor);
-  }
 }
- 
+
+#back-button {
+    right: 82px;
+}
+
+#back-button:hover {
+    background-color: var(--textBoxColor);
+}
+
+#play-pause-button:hover {
+    background-color: var(--textBoxColor);
+}
+.imgIcone {
+  height: 80%;
+  width: 80%;
+  filter: invert(100%);
+}
+.imgBack {
+height: 60%;
+width: 40%;
+filter: invert(100%);
+}
 main {
     section {
         background-color: var(--textBoxColor);

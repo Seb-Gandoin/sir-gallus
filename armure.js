@@ -6,12 +6,14 @@ let closeBtn = document.getElementsByClassName("close")[0];
 playPauseButton.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
-        playPauseButton.textContent = "pause";
+        playPauseButton.textContent = "𝅛 𝅛";
     } else {
         audio.pause();
-        playPauseButton.textContent = "play";
+        playPauseButton.textContent = "♬";
     }
 });
+
+
 
 
 

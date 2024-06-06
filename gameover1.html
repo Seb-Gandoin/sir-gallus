@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gameover.css">
+    <title>Game Over</title>
+</head>
+<body>
+    <header>
+        <audio id="bg-music" autoplay loop>
+            <source src="sounds/sad-violin-150146.mp3" type="audio/mpeg" />
+        </audio>
+        <button id="play-pause-button">♬</button>
+    </header>
+    <section>
+        <h1>GAME OVER</h1>
+        <p>    
+            Bravo ! tu as tenté l’ascension et tu as fini par dévaler la montagne et t’écraser 
+            en bas. C’est ça de vouloir aller plus vite que la musique !
+        </p>
+    </section>
+    <div class="btn">
+        <button onclick="location.href='armure.html'">
+            Recommencer la partie
+        </button>
+        <button onclick="location.href='accueil.html'">
+            Abandoner
+        </button>
+    </div>
+    <script src="gameover.js"></script>
+</body>
+</html>
