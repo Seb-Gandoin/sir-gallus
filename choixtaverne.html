@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Aventures de Sir Gallus - à toi de jouer</title>
+    <link
+      rel="shortcut icon"
+      href="assets/poulet (favicon).png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="choixtaverne.css">
+</head>
+
+<body>
+    <button id="button-accueil" onclick="redirectToHome()"><img class="imgIcone" src="img/WZ1buh01.svg"></button>
+    <audio id="bg-music" autoplay loop>
+        <source src="assets/rabbit-oracle.mp3" type="audio/mpeg">
+    </audio>
+    <button id="play-pause-button">♬</button>
+    <button id="back-button" onclick="redirectToPage()"><img class="imgBack" src="img/back.png"></button>
+    <div class="container">
+        <h1>A TOI DE JOUER !</h1>
+        <div class="card">
+            <img id="montagne" src="img/taverne.jpeg" alt="La Taverne Enchantée">
+            <h2>La Taverne Enchantée</h2>
+            <p>Une petite pause bien méritée, ça te tente ?</p>
+            <a href="bar.html" class="zoomLink"><button class="zoomButton">Je le choisis</button></a>
+        </div>
+        <div class="card">
+            <img id="foret" src="img/renardor-castle.jpeg" alt="Le Château de Renardor">
+            <h2>Le Château de Renardor</h2>
+            <p>Pas le temps de niaiser ! Rends-toi au plus vite chez ton ennemi !</p>
+            <a href="chef.html" class="zoomLink"><button class="zoomButton">Je le choisis</button></a>
+        </div>
+
+        <script src="choixtaverne.js"></script>
+
+</html>
