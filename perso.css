@@ -104,9 +104,33 @@
     padding: 0;
 }
 
-   .backWhite {
+.backWhite {
     background-color: rgb(255,255,255,0.3);
     height: 100vh;
 }
 
+.backWhiteheader {
+    background-color: rgb(255,255,255,0.3);
+    height: 10vh;
+}
 
+/* Bouton Musique */
+
+#play-pause-button {
+    float: right;
+    margin-top: 2%;
+    margin-right: 5%;
+    padding: 10px 20px;
+    height: 40px;
+    width: 80px;
+    background-color: var(--buttonBoxColor);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 50;
+  }
+
+  #play-pause-button:hover {
+    background-color: var(--textBoxColor);
+  }
