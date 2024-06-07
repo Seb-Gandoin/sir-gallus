@@ -27,7 +27,8 @@ body {
     height: 100vh;
 
     #play-pause-button,
-    #back-button {
+    #back-button,
+    #button-accueil {
         position: absolute;
         top: 0;
         right: 0;
@@ -51,6 +52,16 @@ body {
 
     #play-pause-button:hover {
         background-color: var(--textBoxColor);
+    }
+
+    #button-accueil {
+        left: 0;
+    }
+
+    .imgIcone {
+        height: 80%;
+        width: 80%;
+        filter: invert(100%);
     }
 }
 

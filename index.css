@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
-
 :root {
     --textBoxColor: rgb(203, 208, 185, 0.6);
     --buttonBoxColor: #656839;
@@ -7,6 +6,21 @@
     --radiusText: 20px;
     --radiusButton: 10px;
     --fontColor: whitesmoke;
+}
+
+#play-pause-button,
+#back-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 80px;
+    font-size: 1rem;
+    background-color: var(--buttonBoxColor);
+    color: var(--fontColor);
+    border: none;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
 }
 
 .Title {
@@ -83,6 +97,14 @@ filter: invert(100%);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#back-button {
+    right: 82px;
+}
+
+#back-button:hover {
+    background-color: var(--textBoxColor);
 }
 
 .button {
