@@ -1,0 +1,180 @@
+:root {
+    --textBoxColor: rgb(203, 208, 185, 0.6);
+    --buttonBoxColor: #656839;
+    --fontP: "Inter", sans-serif;
+    --radiusText: 20px;
+    --radiusButton: 10px;
+    --fontColor: whitesmoke;
+}
+
+#button-accueil,
+#play-pause-button,
+#back-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 80px;
+    font-size: 1rem;
+    background-color: var(--buttonBoxColor);
+    color: white;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+}
+
+#button-accueil {
+    left: 0;
+}
+
+#back-button {
+    right: 82px;
+}
+
+#back-button:hover {
+    background-color: var(--textBoxColor);
+}
+
+#play-pause-button:hover {
+    background-color: var(--textBoxColor);
+}
+
+.imgIcone {
+    height: 80%;
+    width: 80%;
+    filter: invert(100%);
+}
+
+.imgBack {
+    height: 60%;
+    width: 40%;
+    filter: invert(100%);
+}
+
+#button-accueil:hover {
+    background-color: var(--textBoxColor);
+}
+
+body {
+    background: url(../Assets/BgPageRemake.PNG) no-repeat center center fixed;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+}
+
+.Bubble1 {
+    width: 25vh;
+    height: 15vh;
+    left: 55%;
+    bottom: 20%;
+    top: 25%;
+    position: absolute;
+    opacity: 75%;
+    display: none
+}
+
+.Bubble1.open {
+    display: block;
+}
+
+.Bubble2 {
+    width: 25vh;
+    height: 15vh;
+    right: 9%;
+    bottom: 20%;
+    top: 50%;
+    position: absolute;
+    opacity: 75%;
+    display: none
+}
+
+.Bubble2.open {
+    display: block;
+}
+
+.Bubble3 {
+    width: 25vh;
+    height: 15vh;
+    right: 18%;
+    bottom: 20%;
+    top: 20%;
+    position: absolute;
+    opacity: 75%;
+    display: none
+}
+
+.Bubble3.open {
+    display: block;
+}
+
+.Bubble4 {
+    width: 25vh;
+    height: 20vh;
+    bottom: 28%;
+    left: 30%;
+    position: absolute;
+    opacity: 75%;
+    display: none
+}
+
+.Bubble4.open {
+    display: block;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 98vh;
+}
+
+.RabbitChar {
+    Width: 27vh;
+    height: 43vh;
+    grid-area: 3 / 5 / 4 / 6;
+    cursor: pointer;
+    position: absolute;
+    top: 32vh;
+    left: 97vh;
+}
+
+.PenguinChar {
+    Width: 30vh;
+    height: 50vh;
+    grid-area: 4/8/5/9;
+    cursor: pointer;
+    position: absolute;
+    top: 50vh;
+    right: 0vh;
+}
+
+.DuckChar {
+    Width: 20vh;
+    height: 26vh;
+    grid-area: 2/7/4/8;
+    cursor: pointer;
+    position: absolute;
+    top: 33vh;
+    left: 138vh;
+}
+
+.PigChar {
+    Width: 25vh;
+    height: 35vh;
+    grid-area: 3 / 3 / 5 / 4;
+    cursor: pointer;
+    position: absolute;
+    top: 65vh;
+    left: 45vh;
+}
+
+.DoorExit {
+    filter: drop-shadow(-2px -1px 5px rgb(246, 255, 0));
+    position: absolute;
+    height: 10vh;
+    left: 130vh;
+    top: 90vh;
+}
