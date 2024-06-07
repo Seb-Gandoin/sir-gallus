@@ -8,20 +8,6 @@
     --fontColor: whitesmoke;
 }
 
-#play-pause-button,
-#back-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 40px;
-    width: 80px;
-    font-size: 1rem;
-    background-color: var(--buttonBoxColor);
-    color: var(--fontColor);
-    border: none;
-    border-radius: 0 0 20px 20px;
-    cursor: pointer;
-}
 
 .Title {
     margin: 2%;
@@ -51,14 +37,50 @@ body {
     align-items: center;
 }
 
-#back-button {
-    right: 82px;
+#button-accueil {
+    left: 0;
 }
+#button-accueil, #play-pause-button, #back-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      width: 80px;
+      font-size: 1rem;
+      background-color: var(--buttonBoxColor);
+      color: white;
+      border: none;
+      border-radius: 0 0 20px 20px;
+      cursor: pointer;
+  }
+  
+  #back-button {
+      right: 82px;
+  }
+  
+  #back-button:hover {
+      background-color: var(--textBoxColor);
+  }
+  
+  #play-pause-button:hover {
+      background-color: var(--textBoxColor);
+  }
 
-#back-button:hover {
+  #button-accueil:hover {
     background-color: var(--textBoxColor);
 }
 
+  .imgIcone {
+    height: 80%;
+    width: 80%;
+    filter: invert(100%);
+}
+.imgBack {
+  height: 60%;
+  width: 40%;
+  filter: invert(100%);
+}
+  
 .button {
     padding: 3%;
     border-radius: var(--radiusButton);
@@ -66,6 +88,7 @@ body {
     color: white;
     font-weight: bold;
     font-size: 3vh;
+    cursor: pointer;
 }
 
 .Btns {

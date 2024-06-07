@@ -15,7 +15,7 @@ let audio = document.getElementById("bg-music");
 let playPauseButton = document.getElementById("play-pause-button");
 let closeBtn = document.getElementsByClassName("close")[0];
 
-audio.volume = 0.4;
+audio.volume = 0.1;
 playPauseButton.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
@@ -43,6 +43,7 @@ function swordSound() {
     let swordSound = new Audio();
     swordSound.src = "sounds/swordsound.mp3";
     swordSound.play();
+    swordSound.volume = 0.1;
 }
 
 

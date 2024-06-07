@@ -79,6 +79,7 @@ h1 {
     font-family: var(--fontP);
     font-size: 15pt;
     transition: transform 0.2s;
+    cursor: pointer;
 }
 
 .buttonFin:hover {

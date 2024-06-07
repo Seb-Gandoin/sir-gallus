@@ -1,7 +1,7 @@
 let audio = document.getElementById("bg-music");
 let playPauseButton = document.getElementById("play-pause-button");
 console.log(audio)
-audio.volume = 0.5;
+audio.volume = 0.1;
 playPauseButton.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
@@ -18,6 +18,9 @@ function redirectToPage() {
 
 function redirectToHome() {
     window.location.href = "accueil.html";
+}
+function gameOver() {
+    window.location.href = "gameover1.html";
 }
 
 /*
