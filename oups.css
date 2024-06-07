@@ -18,14 +18,9 @@
     --radiusButton : 10px;
 }
 
- .backgroundImgAccueil {
-    background: url("img/field-of-broccoli-with-a-village-2d-style\ 22.jpeg") no-repeat center center fixed;
+ body {
+    background: url("img/03-bisBG.png") no-repeat center center fixed;
     background-size: cover;
-}
-
-.backWhite {   
-    background-color: rgb(255,255,255,0.5);
-    height: 100vh;
 }
 
 h1 {

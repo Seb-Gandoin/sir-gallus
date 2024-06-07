@@ -11,6 +11,7 @@
     --buttonBoxColor: #656839;
     --fontTitle: Mate SC;
     --fontP: "Inter", sans-serif;
+    --fontColor: whitesmoke;
     --radiusText: 20px;
     --radiusButton: 10px;
 }
@@ -20,77 +21,117 @@ body {
     background-size: cover;
     font-family: var(--fontP);
     color: black;
-    #play-pause-button {
-        float: right;
-        margin-top: 5%;
-        margin-right: 5%;
-        padding: 10px 20px;
+    #play-pause-button,
+    #back-button,
+    #button-accueil {
+        position: absolute;
+        top: 0;
+        right: 0;
         height: 40px;
         width: 80px;
+        font-size: 1rem;
         background-color: var(--buttonBoxColor);
-        color: black;
+        color: var(--fontColor);
         border: none;
-        border-radius: 10px;
+        border-radius: 0 0 20px 20px;
         cursor: pointer;
-        z-index: 97;
+    }
+    #back-button {
+        right: 82px;
+    }
+    .imgBack {
+        height: 60%;
+        width: 40%;
+        filter: invert(100%);
+    }
+    #back-button:hover {
+        background-color: var(--textBoxColor);
     }
     #play-pause-button:hover {
         background-color: var(--textBoxColor);
     }
-    #character {
-        width: 650px;
-        height: auto;
-        position: absolute;
-        z-index: -1;
-        bottom: 0vh;
-        right: 0vh;
-        /*width: auto;
-        height: 80vh;
-        position: fixed;
-        bottom: 0vh;
-        right: -4vw;*/
+    #button-accueil {
+        left: 0;
+    }
+    .imgIcone {
+        height: 80%;
+        width: 80%;
+        filter: invert(100%);
+    }
+}
+
+.character {
+    width: 600px;
+    height: auto;
+    position: relative;
+    top: 6rem;
+    left: 40%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.shadow {
+    position: absolute;
+    width: 600px;
+    height: 5rem;
+    background: rgba(43, 43, 43, 0.9);
+    border-radius: 50%;
+    bottom: -10px;
+    left: 40%;
+    z-index: -1;
+    animation: shadow 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes shadow {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
     }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.text-box,
-.answer-input {
-    z-index: 10;
-}
-
-.text-box {
-    background-color: var(--textBoxColor);
-    margin-right: 55%;
-    margin-left: 5%;
-    padding: 25px;
-    border-radius: var(--radiusText);
-    margin-bottom: 20px;
-    max-width: 600px;
-    text-align: start;
-    p {
-        padding: 10px 0
+    margin-top: -30rem;
+    margin-left: 5rem;
+    .text-box {
+        background-color: var(--textBoxColor);
+        margin-right: 55%;
+        margin-left: 5%;
+        padding: 25px;
+        border-radius: var(--radiusText);
+        margin-bottom: 20px;
+        width: 50%vw;
+        max-width: 700px;
+        text-align: start;
+        p {
+            padding: 10px 0
+        }
     }
-}
-
-#answer-input {
-    margin-right: 55%;
-    margin-left: 5%;
-    padding: 10px;
-    font-size: 16px;
-    color: black;
-    border-radius: 10px;
-    border: 1px solid #888;
-    width: 200px;
-    text-align: center;
-    background-color: var(--buttonBoxColor);
-    cursor: pointer;
+    #answer-input {
+        margin-right: 55%;
+        margin-left: 5%;
+        padding: 10px;
+        font-size: 16px;
+        color: black;
+        border-radius: 10px;
+        border: 1px solid #888;
+        width: 50%vw;
+        max-width: 700px;
+        text-align: center;
+        background-color: var(--buttonBoxColor);
+        cursor: pointer;
+    }
 }
 
 #popup-overlay {
