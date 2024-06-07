@@ -20,6 +20,7 @@
     --radiusText : 20px;
     --radiusButton : 10px;
 }
+
 .Title {
     font-family: var(--fontTitle);
     font-optical-sizing: auto;
@@ -29,78 +30,99 @@
     align-items: center;
     padding: 10px;
     text-align: center; 
-
 }
 
-    .poule { 
-        height: 350px;
-        border: 5px solid black;
-        border-radius: 80px;
-        background-color: #241d1d;
-        background-image: url("salleTrone.jpeg");
-        filter: drop-shadow(16px 16px 20px black);
-        filter: contrast(130%);
+#button-accueil {
+    left: 0;
+  }
+  #button-accueil, #play-pause-button, #back-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      width: 80px;
+      font-size: 1rem;
+      background-color: var(--buttonBoxColor);
+      color: white;
+      border: none;
+      border-radius: 0 0 20px 20px;
+      cursor: pointer;
+  }
+  
+  #back-button {
+      right: 82px;
+  }
+  
+  #back-button:hover {
+      background-color: var(--textBoxColor);
+  }
+  
+  #play-pause-button:hover {
+      background-color: var(--textBoxColor);
+  }
+  .imgIcone {
+    height: 80%;
+    width: 80%;
+    filter: invert(100%);
+  }
+  .imgBack {
+  height: 60%;
+  width: 40%;
+  filter: invert(100%);
+  }
+
+.poule { 
+    height: 30vh;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: #241d1d;
+    background-image: url("salleTrone.jpeg");
+    filter: drop-shadow(16px 16px 20px black);
+    filter: contrast(130%);
         
         }
 
-   .lapin {
-            
-            height: 350px;
-            border: 5px solid black;
-            border-radius: 80px;
-            background-color: #241d1d;
-            background-image: url("salleTrone.jpeg");
-            filter: drop-shadow(16px 16px 20px black);
-            filter: contrast(130%);
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
-            -moz-filter: blur(5px);
-            -o-filter: blur(5px);
-            -ms-filter: blur(5px);
-            
-            
-            
-            
+.lapin {           
+    height: 30vh;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: #241d1d;
+    background-image: url("salleTrone.jpeg");
+    filter: drop-shadow(16px 16px 20px black);
+    filter: contrast(130%);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);  
+}
 
-            
-            
-            
-            }
-     .renard {
-        border-radius:  linear-gradient(#f6b73c, #4d9f0c) 30;
+.renard {
+    border-radius:  linear-gradient(#f6b73c, #4d9f0c) 30;
+    height: 30vh;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: #241d1d;
+    background-image: url("salleTrone.jpeg");
+    filter: blur(5px);
+    filter: drop-shadow(16px 16px 20px black);
+    filter: contrast(130%);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+.align {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
         
-        height: 350px;
-        border: 5px solid black;
-        border-radius: 80px;
-        background-color: #241d1d;
-        background-image: url("salleTrone.jpeg");
-        filter: blur(5px);
-        filter: drop-shadow(16px 16px 20px black);
-        filter: contrast(130%);
-        filter: blur(5px);
-        -webkit-filter: blur(5px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        }
-
-        .align {
-            display: flex;
-            padding-left: 10%;
-            align-items: center;
-            
-            
-
-        }
-   .img{
-    width: 20%;
-    
-    
-   }
-        
-   .texte {
-    
-    width: 20%;
+.texte { 
+    width: 100vh;
+    font-size : 2.3vh;
     font-family: var(--fontP);
     border: 5px solid black;
     border-radius: var(--radiusText);
@@ -109,60 +131,54 @@
     color: black;
     background-color: var(--textBoxColor);
     color : black
-
 }
-.texte:hover
-{color: white;
+
+.texte:hover {
+    color: white;
 } 
 
-    
-    
+.img:hover {
+    transform: scale(1.2);
+}
 
-   .bgimgperso{
+.bgimgperso {
     background: url("brocoli.jpg") no-repeat center center fixed;
-    background-size: cover;
-
-  
+    background-size: cover;  
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    }
+}
 
-   .backWhite{
+.backWhite {
     background-color: rgb(255,255,255,0.3);
     height: 100vh;
-    }
+}
 
+.backWhiteheader {
+    background-color: rgb(255,255,255,0.3);
+    height: 10vh;
+}
 
+/* Bouton Musique */
 
-    .pouleImg:hover + .hidePoule {
-    display: block;
-    animation-duration: 3s;
-    animation-name: slidein;
-    }
-    
-    /* .lapinImg:hover + .hideLapin {
-        display: block;
-        animation-duration: 3s;
-        animation-name: slidein;
-        }
-    .renardImg:hover + .hideRenard {
-            display: block;
-            animation-duration: 3s;
-            animation-name: slidein;
-            } */
+#play-pause-button {
+    float: right;
+    margin-top: 2%;
+    margin-right: 5%;
+    padding: 10px 20px;
+    height: 40px;
+    width: 80px;
+    background-color: var(--buttonBoxColor);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 50;
+  }
 
-@keyframes slidein {
-    from {
-      margin-left: 50%;
-      
-    }
-  
-    to {
-      margin-left: 0%;
-      
-    }
+  #play-pause-button:hover {
+    background-color: var(--textBoxColor);
   }
