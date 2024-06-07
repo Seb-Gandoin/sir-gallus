@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Aventures de Sir Gallus - Enigme</title>
+    <link
+      rel="shortcut icon"
+      href="assets/poulet (favicon).png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="enigme.css">
+</head>
+
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="assets/003-enigme.mp3" type="audio/mpeg">
+    </audio>
+
+    <img id="character" src="assets/rabbit-oracle.png" alt="rabbit-oracle">
+    <button id="play-pause-button">♬</button>
+    <button id="back-button">Retour</button>
+    <div class="container">
+        <div class="text-box">
+            <p>En chemin, Sir Gallus rencontre Lapinard le lapin druide, qui bloquait son passage dans la Forêt des
+                Mystères. Lapinard dit :</p>
+            <p>« Réponds à mon énigme, voyageur, et tu pourras continuer. »</p>
+            <p>Je suis toujours devant vous, mais vous ne pouvez jamais me toucher. Que suis-je ?</p>
+        </div>
+        <input type="text" id="answer-input" placeholder="Un mot en minuscule">
+    </div>
+    <div id="popup-overlay">
+        <div class="popup-content">
+            <p>
+                Le lapin sage, impressionné par la réponse, laissa passer Sir Gallus, lui offrant un talisman magique en
+                récompense.
+            </p>
+            <a class="popup-button" href="combat.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    fill="currentColor" class="bi bi-fast-forward-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.79 5.093 8 7.386V5.5a.5.5 0 0 1 .79-.407l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 8 10.5V8.614l-3.21 2.293A.5.5 0 0 1 4 10.5v-5a.5.5 0 0 1 .79-.407" />
+                </svg></a>
+        </div>
+    </div>
+    <script src="enigme.js"></script>
+</body>
+
+</html>

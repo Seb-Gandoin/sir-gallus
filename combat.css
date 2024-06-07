@@ -77,11 +77,11 @@ body {
 }
 
 #bulleArgh.open{
-  width: 35vh;
+  width: 25vh;
   position : fixed;
   top: 6%;
-  left: 80%;
-  display: block !important;
+  left: 75%;
+  display: block;
 }
 
 .sonButton {
@@ -135,5 +135,27 @@ body {
   posisiton : absolute;
 }
 
+#play-pause-button {
+  float: right;
+  margin-top: 5%;
+  margin-right: 5%;
+  padding: 10px 20px;
+  height: 40px;
+  width: 80px;
+  background-color: var(--buttonBoxColor);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 50;
+
 }
+
+#play-pause-button:hover {
+  background-color: var(--textBoxColor);
+}
+
+
+}
+
 /* Fin body */

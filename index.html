@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Les Aventures de Sir Gallus</title>
+    <title>Les Aventures de Sir Gallus - Accueil</title>
+    <link
+      rel="shortcut icon"
+      href="assets/poulet (favicon).png"
+      type="image/x-icon"
+    />
 </head>
+
 <body>
-    <main>
-        
-    </main>
+    <button id="button-accueil" onclick="redirectToHome()"><img class="imgIcone" src="img/WZ1buh01.svg"></button>
+    <audio id="bg-music" autoplay loop>
+        <source src="assets/rabbit-oracle.mp3" type="audio/mpeg">
+    </audio>
+    <button id="play-pause-button">♬</button>
+    <button id="back-button" onclick="redirectToPage()"><img class="imgBack" src="img/back.png"></button>
+    <h1 class="Title">Les Aventures de Sir Gallus</h1>
+    <header>
+        <section class=imgANDtext>
+            <img class="picture" src="Assets/poulet-armure-dessin-2d-925373054.png" alt="Poulet en armure">
+            <p class="Text">Dans le paisible village de Verdureville, célèbre pour ses champs luxuriants de brocolis, vivait un poulet nommé Sir Gallus. Chevalier brave et vaillant, Sir Gallus était le protecteur désigné de Verdureville. Un jour, une menace surgit : le
+                renard rusé, Renardor, avait décidé de s'emparer des brocolis pour nourrir son clan. Sir Gallus savait qu'il devait agir rapidement pour sauver son village bien-aimé.</p>
+        </section>
+    </header>
+    <div class="Btns">
+        <a href="perso.html">
+            <button class="button" style="background-color: rgb(49, 148, 56);">Démarrer l'aventure !</button></a>
+        <a href="Troll.html">
+            <button class="button" style="background-color: rgb(188, 44, 44);">Fais-le disparaître !</button></a>
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>

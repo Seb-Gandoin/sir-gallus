@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="accueil.css">
     <title>La communauté du brocoli</title>
+    <link
+      rel="shortcut icon"
+      href="assets/poulet (favicon).png"
+      type="image/x-icon"
+    />
+    <script src="accueil.js"></script>
 </head>
-<body class="backgroundImgAccueil">
-        <main class="backWhite">
+<body>
+    <button id="play-pause-button">♬</button>
+    <audio id="bg-music-accueil" autoplay loop>
+        <source src="sounds/medieval-background-196571_ygfg9O9l.mp3" type="audio/mpeg">
+    </audio>
             <h1>La communauté du brocoli</h1>
             <section class="gameChoice">
                 <div class="game1">
+                    <audio id="flash">
+                        <source src="sounds/SWSH_Whoosh 8 (ID 1801)_LS.wav" type="audio/mpeg">
+                    </audio>
                     <a href="index.html">
                     <p class="game1Para">Les aventures <br/>de Sir Gallus</p>
                     <img class="game1Background" src="img/backgroungdbrocoli.jpeg" alt="Champ de brocolis">
@@ -36,6 +48,5 @@
                 Venez passer un bon moment autour de ces petits jeux intéractifs indépendants !
                 Incarnez Sir Gallus, un chevalier poulet qui part à l’aventure pour sauver son village d’un destin funeste.
             </p>
-        </main>
 </body>
 </html>

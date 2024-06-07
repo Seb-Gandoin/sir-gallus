@@ -1,13 +1,39 @@
-// Musique de fond
-function playMusic() {
-    let playMusic = new Audio();
-    playMusic.src = "assets/open_2.mp3";
-    playMusic.play();
+// // Musique de fond avec boutton
+// let playButton = document.querySelector(".sonButton");
+// let playSong = false;
+// let audio = new Audio("assets/open_2.mp3");
+
+// playButton.addEventListener('click', function(){
+            
+//     if (!playSong) {
+//         audio.play();
+//         playSong = true;
+//     } else if (playSong === true) {
+//         audio.pause()
+//         playSong = false;
+//     }
+//     })
+
+// Audio
+let audio = document.getElementById("bg-music");
+let playPauseButton = document.getElementById("play-pause-button");
+let closeBtn = document.getElementsByClassName("close")[0];
+
+
+playPauseButton.addEventListener("click", function () {
+    if (audio.paused) {
+        audio.play();
+        playPauseButton.textContent = "pause";
+    } else {
+        audio.pause();
+        playPauseButton.textContent = "play";
+    }
+});
 
 // Redirection pop-up au bout de X clicks
 let clickCount = 0;
-const requiredClicks = 15;
-const bulleClicks = 5;
+const requiredClicks = 30;
+const bulleClicks = 15;
 const renardor = document.querySelector('.renardor');
 const bulleArgh = document.querySelector("#bulleArgh");
 let popup = document.querySelector('#popup-overlay');
