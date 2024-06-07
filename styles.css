@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: yellow;
+    background: black;
+    display: flex;
+    justify-content: center;  /* Centre le contenu horizontalement */
+    align-items: center;      /* Centre le contenu verticalement */
+    background-image: url(fond-hyperespace-3d-effet-tunnel-chaine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.star-wars {
+    perspective: 400px;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;             
+}
+
+.crawl {
+    position: absolute;
+    bottom: -100vh;
+    width: 100%;              
+    transform-origin: 50% 100%;
+    transform: rotateX(20deg);
+    animation: crawl 10s linear infinite;
+    text-align: center;     
+}
+
+@keyframes crawl {
+    0% {
+        bottom: -100vh;
+    }
+    100% {
+        bottom: 100vh;
+    }
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.title p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.title h1 {
+    font-size: 4em;
+    margin: 0;
+}
+.texte{
+    width: 100%;
+    font-size: xx-large;
+}
+
