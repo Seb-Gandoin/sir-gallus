@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let countdownElement = document.getElementById('countdown');
-    let countdown = 45; // secondes
+    let countdown = 50; // secondes
 
     countdownElement.textContent = countdown;
 
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (countdown <= 0) {
             clearInterval(interval);
-            window.location.href = 'accueil.html';  //Mettre le lien de redirection
+            window.location.href = '../accueil.html';  //Mettre le lien de redirection
         }
     }, 1000);
 });
@@ -30,4 +30,7 @@ playPauseButton.addEventListener("click", function () {
     }
 });
 
-
+//Retour accueil
+function redirectToHome() {
+    window.location.href = "../accueil.html";
+}

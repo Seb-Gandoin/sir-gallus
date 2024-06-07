@@ -19,6 +19,9 @@ function redirectToPage() {
 function redirectToHome() {
     window.location.href = "accueil.html";
 }
+function gameOver() {
+    window.location.href = "gameover1.html";
+}
 
 /*
 document.getElementById('zoomButton').addEventListener('click', function (event) {
