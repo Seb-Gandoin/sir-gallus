@@ -1,5 +1,6 @@
 let audio = document.getElementById("bg-music");
 let playPauseButton = document.getElementById("play-pause-button");
+audio.volume = 0.1;
 playPauseButton.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
