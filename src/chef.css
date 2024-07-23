@@ -1,0 +1,171 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700italic);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --textBoxColor: rgb(203, 208, 185,0.6);
+    --buttonBoxColor: #656839;
+    --fontP: "Inter", sans-serif;
+    --radiusText : 20px;
+    --radiusButton : 10px;
+  }
+  
+  html, body { height : 100vh; }
+
+body {
+    background: url(../assets/cuisine3.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    cursor: url("../assets/sword4.png"), pointer;
+    
+    #back { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        
+
+            .text-box {
+                background-color: var(--textBoxColor);
+                margin-right: 55%;
+                margin-left: 5%;
+                padding: 25px;
+                border-radius: var(--radiusText);
+                margin-bottom: 20vh;
+                max-width: 45vh;
+                
+                p {
+                    padding: 10px 0;
+                    font-family: var(--fontP);
+                    font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+                    text-align: center;
+                }
+            }
+
+            .continue {
+                display: flex;
+                justify-content: right;
+                margin-right: 15vh;
+                cursor: pointer;
+                filter: drop-shadow(-2px -1px 5px gold);
+            }
+        }
+
+    .chef {
+        position:fixed;
+        width: 95vh;
+        bottom: -3vh;
+        left: 30%;
+        transition: transform 0.1s;
+        }
+    }
+
+/* Compte à rebours */
+    #countdown {
+      font-family: 'Roboto Condensed', sans-serif;
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -100px;
+      margin-top: -50px;
+      color: white;
+      font-size: 5em;
+      text-align: center;
+      font-weight: bold;        
+    }     
+
+    /* Pop-up */
+          #popup-overlay{
+            position:fixed;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 98;
+            display : none;
+          }
+          
+          #popup-overlay.open{
+            display: block !important;
+          }
+          
+          .popup-content {
+            width: 500px;
+            height: 363px;
+            padding-top: 35px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            background: url("../assets/FondPopUp.png") ;
+            border-radius: var(--radiusText);
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-family: var(--fontP);
+            text-align: center;
+            line-height:2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          
+            p{
+              margin:85px 0;
+            }
+          }
+          
+          .popup-button {
+            color: var(--buttonBoxColor);
+            posisiton : absolute;
+          }
+          
+    /* Boutton Musique + Back */
+    #button-accueil {
+      left: 0;
+  }
+  #button-accueil, #play-pause-button, #back-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 80px;
+        font-size: 1rem;
+        background-color: var(--buttonBoxColor);
+        color: white;
+        border: none;
+        border-radius: 0 0 20px 20px;
+        cursor: pointer;
+    }
+    
+    #back-button {
+        right: 82px;
+    }
+    
+    #back-button:hover {
+        background-color: var(--textBoxColor);
+    }
+    
+    #play-pause-button:hover {
+        background-color: var(--textBoxColor);
+    }
+    .imgIcone {
+      height: 80%;
+      width: 80%;
+      filter: invert(100%);
+  }
+  .imgBack {
+    height: 60%;
+    width: 40%;
+    filter: invert(100%);
+}
+    

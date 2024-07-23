@@ -15,6 +15,9 @@ playPauseButton.addEventListener("click", function () {
 function redirectToPage() {
     window.location.href = "ronces.html";
 }
+function redirectToHome() {
+    window.location.href = "accueil.html";
+}
 
 /*
 document.getElementById('zoomButton').addEventListener('click', function (event) {

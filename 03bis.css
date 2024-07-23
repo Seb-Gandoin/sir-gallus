@@ -19,7 +19,7 @@
 
 body {
     font-family: var(--fontP);
-    background: url('img/03-bisBG.png') no-repeat center center fixed;
+    background: url('assets/03-bisBG.png') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: space-around;
@@ -27,7 +27,8 @@ body {
     height: 100vh;
 
     #play-pause-button,
-    #back-button {
+    #back-button,
+    #button-accueil {
         position: absolute;
         top: 0;
         right: 0;
@@ -45,12 +46,28 @@ body {
         right: 82px;
     }
 
+    .imgBack {
+        height: 60%;
+        width: 40%;
+        filter: invert(100%);
+    }
+
     #back-button:hover {
         background-color: var(--textBoxColor);
     }
 
     #play-pause-button:hover {
         background-color: var(--textBoxColor);
+    }
+
+    #button-accueil {
+        left: 0;
+    }
+
+    .imgIcone {
+        height: 80%;
+        width: 80%;
+        filter: invert(100%);
     }
 }
 

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+.hidePoule {
+    display: none;
+}
+.hideLapin{
+    display: none;
+}
+.hideRenard {
+    display: none;
+}
 
 :root {
     --textBoxColor: rgb(203, 208, 185, 0.6);
@@ -14,12 +23,10 @@
 
 .Title {
     font-family: var(--fontTitle);
-    font-optical-sizing: auto;
-    font-weight: 4000;
     font-style: normal;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 4vh;
     text-align: center; 
 }
 
@@ -63,7 +70,7 @@
   }
 
 .poule { 
-    height: 30vh;
+    height: 27vh;
     border: 5px solid black;
     border-radius: 25px;
     background-color: #241d1d;
@@ -74,7 +81,7 @@
         }
 
 .lapin {           
-    height: 30vh;
+    height: 27vh;
     border: 5px solid black;
     border-radius: 25px;
     background-color: #241d1d;
@@ -86,11 +93,16 @@
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);  
+    
+}
+
+.lapin:hover {
+    content: "Ce personnage n'est pas débloqué";
 }
 
 .renard {
     border-radius:  linear-gradient(#f6b73c, #4d9f0c) 30;
-    height: 30vh;
+    height: 27vh;
     border: 5px solid black;
     border-radius: 25px;
     background-color: #241d1d;
@@ -103,6 +115,9 @@
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
+}
+.renard:hover {
+    content: "Ce personnage n'est pas débloqué";
 }
 
 .align {
@@ -155,21 +170,99 @@
 
 /* Bouton Musique */
 
-#play-pause-button {
-    float: right;
-    margin-top: 2%;
-    margin-right: 5%;
-    padding: 10px 20px;
-    height: 40px;
-    width: 80px;
-    background-color: var(--buttonBoxColor);
-    color: black;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    z-index: 50;
+#button-accueil {
+    left: 0;
+}
+#button-accueil, #play-pause-button, #back-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      width: 80px;
+      font-size: 1rem;
+      background-color: var(--buttonBoxColor);
+      color: white;
+      border: none;
+      border-radius: 0 0 20px 20px;
+      cursor: pointer;
   }
-
+  
+  #back-button {
+      right: 82px;
+  }
+  
+  #back-button:hover {
+      background-color: var(--textBoxColor);
+  }
+  
   #play-pause-button:hover {
-    background-color: var(--textBoxColor);
+      background-color: var(--textBoxColor);
+  }
+  .imgIcone {
+    height: 80%;
+    width: 80%;
+    filter: invert(100%);
+}
+.imgBack {
+  height: 60%;
+  width: 40%;
+  filter: invert(100%);
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 54vh;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 17px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 12vh;
+    left: 70vh;
+    margin-left: -77px;
+    font-size: 3vh;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
   }

@@ -6,16 +6,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="end.css">
     <title>Les Aventures de Sir Gallus - Fin</title>
-    <link
-      rel="shortcut icon"
-      href="assets/poulet (favicon).png"
-      type="image/x-icon"
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <link rel="shortcut icon" href="/assets/poulet (favicon).png" type="image/x-icon"
     />
-    <script src="end.js"></script>
 </head>
-<body class="backgroundImgEnd">
+<body class="backgroundImgEnd ">
+    <audio id="bg-music" autoplay loop>
+        <source src="sounds/endingSong.mp3" type="audio/mpeg" />
+      </audio>
+      <button id="button-accueil" onclick="redirectToHome()"><img class="imgIcone" src="img/WZ1buh01.svg"></button>
+      <button id="play-pause-button">♬</button>
+      <a href="combat.html" ><button id="back-button"><img class="imgBack" src="img/back.png"></button></a>
     <main>
+        
         <section>
+            
             <div class="backTextEnd">
                 <h1>Fin</h1>
                 <p class="textEnd">
@@ -24,9 +29,10 @@
                     Les champs de brocolis étaient sauvés, et le village célébra longtemps
                     la bravoure de leur chevalier poulet.
                 </p>
-                <a href="accueil.html"><button>Retour à l'accueil</button></a>
+                <a href="FIN/credit.html"><button class="buttonFin">Merci Sir Gallus !  ♥</button></a>
             </div>
         </section>
     </main>
+    <script src="end.js"></script>
 </body>
 </html>

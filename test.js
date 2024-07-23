@@ -7,7 +7,7 @@ let popup = document.querySelector('#popup-overlay');
 let popupSound = new Audio();
 popupSound.src = "assets/Popup.mp3";
 
-
+audio.volume = 0.1;
 playPauseButton.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
